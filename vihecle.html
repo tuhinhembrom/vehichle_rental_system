@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vehicles - RentRide</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#111;
+    color:#fff;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff9800;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:#ff9800;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:50px 0;
+}
+
+.container h1{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.vehicle-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.vehicle-card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.vehicle-card:hover{
+    transform:translateY(-8px);
+}
+
+.vehicle-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.vehicle-info{
+    padding:20px;
+}
+
+.vehicle-info h3{
+    margin-bottom:10px;
+}
+
+.vehicle-info p{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#ff9800;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.btn{
+    display:block;
+    text-align:center;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    margin-top:15px;
+}
+
+.btn:hover{
+    background:#e68900;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">RentRide</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="booking.html">Booking</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<h1>Available Vehicles</h1>
+
+<div class="vehicle-grid">
+
+<div class="vehicle-card">
+    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80">
+    <div class="vehicle-info">
+        <h3>Toyota Corolla</h3>
+        <p>Comfortable sedan for city travel.</p>
+        <div class="price">tk50 / Day</div>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</div>
+
+<div class="vehicle-card">
+    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80">
+    <div class="vehicle-info">
+        <h3>Toyota Prado SUV</h3>
+        <p>Perfect for family tours and long trips.</p>
+        <div class="price">tk900 / Day</div>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</div>
+
+<div class="vehicle-card">
+    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80">
+    <div class="vehicle-info">
+        <h3>Yamaha R15</h3>
+        <p>Sporty bike with excellent mileage.</p>
+        <div class="price">tk200 / Day</div>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</div>
+
+<div class="vehicle-card">
+    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80">
+    <div class="vehicle-info">
+        <h3>BMW 5 Series</h3>
+        <p>Luxury vehicle for premium experience.</p>
+        <div class="price">tk1200 / Day</div>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</div>
+
+<div class="vehicle-card">
+    <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80">
+    <div class="vehicle-info">
+        <h3>Honda Civic</h3>
+        <p>Reliable and fuel-efficient sedan.</p>
+        <div class="price">tk45 / Day</div>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</div>
+
+<div class="vehicle-card">
+    <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80">
+    <div class="vehicle-info">
+        <h3>Ford Mustang</h3>
+        <p>Powerful sports car for enthusiasts.</p>
+        <div class="price">tk150 / Day</div>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+    <p>© 2026 RentRide Vehicle Rental System | Designed by Tuhin</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

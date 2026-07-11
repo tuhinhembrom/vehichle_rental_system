@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vehicle Rental System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Header */
+
+
+
+header{
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff9800;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff9800;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e68900;
+}
+
+/* Vehicles */
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin:60px 0 40px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:0 8%;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+    color:#666;
+}
+
+.card a{
+    display:block;
+    text-align:center;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+}
+
+.card a:hover{
+    background:#e68900;
+}
+
+/* Features */
+
+.features{
+    padding:70px 8%;
+    background:white;
+}
+
+.feature-box{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.feature{
+    width:250px;
+    margin:20px;
+}
+
+.feature h3{
+    margin:15px 0;
+    color:#ff9800;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:block;
+    margin:10px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+    <p>Git Test</p>
+
+<header>
+
+<div class="logo">RentRide</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="vehicles.html">Vehicles</a>
+<a href="booking.html">Booking</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Welcome to RentRide</h1>
+
+<p>Rent Cars, Bikes & SUVs Anytime, Anywhere</p>
+
+<a href="vehicles.html" class="btn">Explore Vehicles</a>
+
+</div>
+
+</section>
+
+<h2 class="section-title">Featured Vehicles</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80">
+<h3>Luxury Car</h3>
+<p>Premium cars for business meetings and family tours.</p>
+<a href="booking.html">Book Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80">
+<h3>Motor Bike</h3>
+<p>Affordable bikes for daily travel and adventure.</p>
+<a href="booking.html">Book Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80">
+<h3>SUV</h3>
+<p>Comfortable SUVs for long trips and vacations.</p>
+<a href="booking.html">Book Now</a>
+</div>
+
+</div>
+
+<section class="features">
+
+<h2 class="section-title">Why Choose Us?</h2>
+
+<div class="feature-box">
+
+<div class="feature">
+<h3>Affordable Price</h3>
+<p>Best rental prices with no hidden charges.</p>
+</div>
+
+<div class="feature">
+<h3>24/7 Support</h3>
+<p>Customer support available anytime.</p>
+</div>
+
+<div class="feature">
+<h3>Verified Vehicles</h3>
+<p>Well-maintained and fully insured vehicles.</p>
+</div>
+
+<div class="feature">
+<h3>Easy Booking</h3>
+<p>Book your vehicle in just a few clicks.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 RentRide Vehicle Rental System | Designed by Tuhin</p>
+
+</footer>
+
+</body>
+</html>
