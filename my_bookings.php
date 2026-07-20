@@ -22,72 +22,29 @@ $result = mysqli_query($conn, $sql);
 <html>
 <head>
 <title>My Bookings</title>
-
-<style>
-
-body{
-    font-family:Arial;
-    background:#f4f4f4;
-}
-
-table{
-    width:90%;
-    margin:30px auto;
-    border-collapse:collapse;
-    background:white;
-}
-
-th,td{
-    border:1px solid #ddd;
-    padding:12px;
-    text-align:center;
-}
-
-th{
-    background:#ff9800;
-    color:white;
-}
-
-h2{
-    text-align:center;
-    margin-top:30px;
-}
-
-</style>
-
 </head>
-
 <body>
 
 <h2>My Bookings</h2>
 
-<table>
+<table border="1" cellpadding="10">
 
 <tr>
 <th>ID</th>
 <th>Vehicle</th>
 <th>Pickup Date</th>
 <th>Return Date</th>
-<th>Pickup Location</th>
-<th>Booking Date</th>
+<th>Location</th>
 </tr>
 
-<?php while($row=mysqli_fetch_assoc($result)){ ?>
+<?php while($row = mysqli_fetch_assoc($result)) { ?>
 
 <tr>
-
 <td><?php echo $row['id']; ?></td>
-
 <td><?php echo $row['vehicle_name']; ?></td>
-
 <td><?php echo $row['pickup_date']; ?></td>
-
 <td><?php echo $row['return_date']; ?></td>
-
 <td><?php echo $row['pickup_location']; ?></td>
-
-<td><?php echo $row['booking_date']; ?></td>
-
 </tr>
 
 <?php } ?>
